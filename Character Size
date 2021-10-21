@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char letter;
+    cout << " Please Enter The 'H' Alphabet " << endl;
+    string input = "";
+    getline (cin,input);
+    if ( input.size () !=1)
+    {
+        cout << " You have entered more than one letter " << endl;
+        
+    }
+    else 
+    {
+        letter = input.at(0);
+        switch (letter)
+        {
+            case 'h':
+            case 'H':
+            cout << " You have entered a letter  " << endl;
+            break;
+            default:
+            {
+                cout << " You did not enter the letter 'h' " << endl;
+                
+            }
+        }
+    }
+}
